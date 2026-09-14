@@ -1,0 +1,24 @@
+# Python 运行缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 数据与结果文件（不需要版本管理就保留，需要追踪就删掉对应行）
+data/
+picture/
+*.csv
+*.png
+*.jpg
+*.pdf
+
+# 编辑器配置
+.vscode/
+.idea/
+
+# 系统临时文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log

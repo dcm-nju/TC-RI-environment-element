@@ -40,9 +40,9 @@ VAR_LIST = list(ENV_VARS.keys())
 # 筛选参数
 YEAR_START   = 1990
 YEAR_END     = 2023
-VMAX_MIN     = 34    # kt, 热带风暴及以上
-DTL_MIN      = 100   # km, 距岸距离
-RI_THRESHOLD = 30    # kt/24h, RI判定阈值
+VMAX_MIN     = 34 
+DTL_MIN      = 100 
+RI_THRESHOLD = 30 
 
 # 缺测值
 MISSING = 9999
@@ -162,9 +162,8 @@ def parse_ships(filepath, vars_to_extract):
     return df
 
 
-# ============================================================
+
 #  模块1: IBTrACS 读取
-# ============================================================
 def load_ibtracs(filepath):
     """读取 IBTrACS CSV，筛选北大西洋 1990-2023、热带风暴及以上、6小时间隔。
     注意: 本文件 SID 列格式异常，改用 USA_ATCF_ID 作为台风ID（AL开头=北大西洋）。
